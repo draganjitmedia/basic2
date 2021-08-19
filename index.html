@@ -16,62 +16,63 @@
 
 <body>
     <nav>
-        <div class="padding bg">
+        <div class="padding bg-hover">
             <a href="#"><span>BR</span> Architects</a>
         </div>
         <ul>
-            <li class="bg"><a href="#">Projects</a></li>
-            <li class="bg"><a href="#">About</a></li>
-            <li class="bg"><a href="#">Contact</a></li>
+            <li class="bg-hover"><a href="#projects">Projects</a></li>
+            <li class="bg-hover"><a href="#about">About</a></li>
+            <li class="bg-hover"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="d-flex">
         <div class="front-img mb">
-            <img src="images/architect.jpg" alt="">
+            <img src="images/architect.jpg" alt="building">
         </div>
         <div class="heading">
             <h1><span>BR</span> Arhitects</h1>
         </div>
     </div>
 
-    <section class="container pt pb mb">
+    <section class="container pt pb mb" id="projects">
         <h2> Projects</h2>
         <div class="d-flex">
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house1.jpg" alt="house1">
                 <h4 class="absolute"> Summer House</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house2.jpg" alt="house2">
                 <h4 class="absolute">Brick House</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house3.jpg" alt="house3">
                 <h4 class="absolute">Renovated</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house4.jpg" alt="house4">
                 <h4 class="absolute">Barn House</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house5.jpg" alt="house5">
                 <h4 class="absolute"> Summer House</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house6.jpg" alt="house6">
                 <h4 class="absolute">Brick House</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house7.jpg" alt="house7">
                 <h4 class="absolute">Renovated</h4>
             </div>
-            <div class="w-25 relative">
+            <div class="w-25 relative nofilter">
                 <img src="images/house8.jpg" alt="house8">
                 <h4 class="absolute">Barn House</h4>
             </div>
         </div>
     </section>
-    <section class=" container pt mb">
+
+    <section class=" container pt mb" id="about">
 
         <h2>About</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem, recusandae iusto
@@ -90,7 +91,7 @@
                     deserunt sed
                     nobis.</p>
                 <p class="pt">
-                    <button>Contact</button>
+                    <a href="#contact"><button>Contact</button></a>
                 </p>
             </div>
             <div class="w-25">
@@ -101,7 +102,7 @@
                     deserunt sed
                     nobis.</p>
                 <p class="pt">
-                    <button>Contact</button>
+                    <a href="#contact"><button>Contact</button></a>
                 </p>
             </div>
             <div class="w-25">
@@ -112,7 +113,7 @@
                     deserunt sed
                     nobis.</p>
                 <p class="pt">
-                    <button>Contact</button>
+                    <a href="#contact"><button>Contact</button></a>
                 </p>
             </div>
             <div class="w-25">
@@ -123,14 +124,14 @@
                     deserunt sed
                     nobis.</p>
                 <p class="pt">
-                    <button>Contact</button>
+                    <a href="#contact"><button>Contact</button></a>
                 </p>
-
             </div>
         </div>
+
     </section>
 
-    <section class="container pt">
+    <section class="container pt" id="contact">
         <h2>Contact</h2>
         <p class="pt pb">Lets get in touch and talk about your next project.</p>
 
@@ -145,6 +146,7 @@
     <section class="container d-flex">
         <img src="images/w-100.jpg" alt="">
     </section>
+
     <footer id="footer" class="mt">
         <p>Powered by Something</p>
     </footer>

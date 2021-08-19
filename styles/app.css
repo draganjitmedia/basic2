@@ -93,7 +93,7 @@ h4 {
 }
 
 .container img {
-    width: 100%;
+    width: 80%;
 }
 
 .w-25 {
@@ -119,6 +119,10 @@ p {
 }
 
 .w-25 img:hover {
+    filter: grayscale(0%);
+}
+
+.w-25.nofilter img {
     filter: grayscale(0%);
 }
 
@@ -193,6 +197,6 @@ footer {
     color: gray;
 }
 
-.bg:hover {
+.bg-hover:hover {
     background: #afb7c4;
 }
