@@ -1,10 +1,18 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    box-shadow: 1px 7px #eee;
+    box-shadow: 3px 2px 8px gray;
+    margin-bottom: 4px;
+}
 
+.padding {
+    padding: 10px;
 }
 
 nav a {
@@ -14,7 +22,6 @@ nav a {
 
 ul {
     display: flex;
-
 }
 
 ul li {
@@ -37,12 +44,13 @@ h1 {
     font-size: 3rem;
     color: white;
     padding: 10px;
+    letter-spacing: 4px;
 }
 
 .heading {
     position: absolute;
     bottom: 50%;
-    left: 40%;
+    left: 45%;
 }
 
 .heading span {
@@ -52,20 +60,23 @@ h1 {
     font-weight: bold;
 }
 
-section {
+.container {
     width: 80%;
     margin: auto;
 }
 
-.container {
+.d-flex {
     display: flex;
-    justify-content: space-between;
-    flex: 1;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .relative {
     position: relative;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 h4 {
@@ -75,7 +86,8 @@ h4 {
 
 .absolute {
     position: absolute;
-    bottom: 80%;
+    top: 0;
+    left: 0;
     background: black;
     color: white;
 }
@@ -85,10 +97,8 @@ h4 {
 }
 
 .w-25 {
-    width: 23%;
-    padding: 2px;
+    width: 24.5%;
 }
-
 
 h2 {
     font-size: 2rem;
@@ -96,19 +106,93 @@ h2 {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
-.card {
-    padding: 5px;
-    width: 24%;
+.w-25 {
+    width: 24.5%;
 }
 
-.card img {
+.w-25 img {
     width: 100%;
+    filter: grayscale(80%);
+}
 
+.w-25 img:hover {
+    filter: grayscale(0%);
 }
 
 button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
     width: 100%;
+}
+
+button:hover {
+    background: #afb7c4;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+input:focus-visible {
+    outline: none;
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-weight: 600;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    width: 20%;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.pt {
+    padding-top: 20px;
+}
+
+.pb {
+    padding-bottom: 20px;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.bg:hover {
+    background: #afb7c4;
 }
